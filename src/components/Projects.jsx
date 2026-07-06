@@ -1,18 +1,41 @@
 const projects = [
+    {
+    title: "Job Portal",
+    desc: "Job Portal – Full Stack Web Application Built a modern and scalable Job Portal using Next.js, TypeScript, Shadcn UI, MySQL, and Drizzle ORM. The platform enables job seekers to search and apply for jobs while allowing employers to post and manage job listings through a secure and user-friendly interface.",
+    tech: ["Nextjs","Typescript","Tailwind CSS", "Shadcn UI", "Next.js Server Actions / API Routes", , " Authentication & Authorization", "Tiptap Text Editor","React Hook Form","Zod Validation"],
+    github: "https://github.com/Nikhil2878/jportal",
+    live: "https://yejobs.vercel.app/",
+  },
+    {
+    title: "UrlSimple",
+    desc: "Full-Stack URL Shortener using Express.js & MySQL I recently completed a URL Shortener project where I focused on writing clean, secure, and scalable backend code while following real-world architecture patterns.",
+    tech: ["Nodejs", "Expressjs", "Zod Validation","DrizzleORM","oAuth", "HTML", "CSS", "MVC Architecture", "JavaScript","JWT Authentication","Argon2",],
+    github: "https://github.com/Nikhil2878/urleasy",
+    live: "https://urlsimple.vercel.app/",
+  },
   {
     title: "MoviePrapti",
     desc: "A movie discovery app using React, OMDB API and TMDB API with search, filters, and recommendation features.",
-    tech: ["React", "Tailwind", "API", "HTML", "CSS", "Supabase", "JavaScript"],
+    tech: ["Reactjs","React Router Dom", "Tailwind CSS", "APIs","OMDB","TMDB","JavaScript"],
     github: "https://github.com/Nikhil2878/MovieRecommend",
     live: "https://movieprapti.netlify.app",
   },
-  {
-    title: "BookPrapti",
-    desc: "A book management system with AI-based book summaries and detailed exploration.",
-    tech: ["HTML", "CSS", "JavaScript", "AI API", "React", "Tailwind", "Supabase"],
-    github: "https://github.com/Nikhil2878/bookprapti",
-    live: "https://bookprapti.netlify.app",
+{
+    title: "GymWeb",
+    desc: "This is description for GymWeb",
+    tech: ["Reactjs", "Tailwind CSS","Framer Motion","React Router Dom"],
+    github: "https://github.com/Nikhil2878/gymsite",
+    live: "https://bahubalinext.netlify.app/",
   },
+
+   {
+    title: "Task Tracker",
+    desc: "full-stack Task Tracker built on the MERN stack I wanted a hands-on project to demonstrate end-to-end full-stack skills — not just CRUD, but the details that separate a demo from something production-ready",
+    tech: ["Reactjs", "Tailwind CSS", "API","Mongoose(ODM)","Nodejs","JavaScript","Expressjs",],
+    github: "https://github.com/Nikhil2878/task_tracker",
+    live: "https://tasktrackerisdone.vercel.app/",
+  },
+
 ];
 
 import { ExternalLink} from "lucide-react";
