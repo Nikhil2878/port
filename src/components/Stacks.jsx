@@ -2,17 +2,22 @@ const stacks = [
   {
     name: "Frontend",
     icon: "🎨",
-    items: ["React", "Tailwind", "JavaScript", "HTML5", "CSS3", "Bootstrap", "Next.js"],
-  },
+    items: ["React.js", "Next.js", "Tailwind Css", "JavaScript", "HTML5", "CSS3","Shadcn UI","Framer Motion","Bootstrap"],
+  },  
   {
     name: "Backend",
     icon: "⚙️",
-    items: ["Node.js", "Express", "MongoDB", "MySQL", "Supabase", "Prisma", "Drizzle"],
+    items: ["Node.js", "Express.js", "Firebase","Supabase", ],
   },
   {
-    name: "Tools",
+    name: "Database",
+    icon: "⚙️",
+    items: ["MongoDB", "MySQL", "Mongoose(ODM)","Drizzle(ORM)","Prisma(ORM)","Authentication(JWT)","Concepts : DSA","DBMS","REST APIs","Cloud","CI/CD"],
+  },
+  {
+    name: "Tools & Platforms",
     icon: "🛠️",
-    items: ["Git", "GitHub", "Vercel", "VS Code", "Sublime"],
+    items: ["Git", "Github", "Docker","AWS","Vercel","Netlify","Render","Railway","Postman","Cloudinary","Uploadthings", ],
   },
 ];
 
