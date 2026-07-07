@@ -2,7 +2,7 @@ const stacks = [
   {
     name: "Frontend",
     icon: "🎨",
-    items: ["React.js", "Next.js", "Tailwind Css", "JavaScript", "HTML5", "CSS3","Shadcn UI","Framer Motion","Bootstrap"],
+    items: ["React.js", "Next.js", "Tailwind Css", "JavaScript","Typescript", "HTML5", "CSS3","Shadcn UI","Framer Motion","Bootstrap"],
   },  
   {
     name: "Backend",
@@ -18,6 +18,11 @@ const stacks = [
     name: "Tools & Platforms",
     icon: "🛠️",
     items: ["Git", "Github", "Docker","AWS","Vercel","Netlify","Render","Railway","Postman","Cloudinary","Uploadthings", ],
+  },
+  {
+    name: "Languages",
+    icon: "🛠️",
+    items: ["Javascript", "Typescript", "Python","Java","C"],
   },
 ];
 
