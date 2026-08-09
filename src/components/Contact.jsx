@@ -28,7 +28,7 @@ const Contact = () => {
             Email
           </h3>
           <p className="text-gray-300 break-all">
-            nikhilrawatnr1111@email.com
+            nikhilrawatnr1111@gmail.com
           </p>
           <a
             href="mailto:nikhilrawat@email.com"
