@@ -1,5 +1,6 @@
 const Contact = () => {
   return (
+    // Comment
     <section
       id="contact"
       className="py-24 px-6 bg-[#0a0a0a] text-white"
