@@ -64,10 +64,16 @@ const Skills = () => {
         </motion.div>
       </div>
     </section>
+      <link
+              rel="canonical"
+              href="https://nikhilrawat.in/skills"
+            />
+    </Helmet>
   );
 };
 
 const SkillBadge = ({ skill }) => (
+  <Helmet>
   <div
     className="px-4 py-2 sm:px-6 sm:py-3
     text-sm sm:text-base md:text-lg
@@ -80,11 +86,10 @@ const SkillBadge = ({ skill }) => (
   >
     {skill}
   </div>
-  <link
-            rel="canonical"
-            href="https://nikhilrawat.in/skills"
-          />
+    <link
+              rel="canonical"
+              href="https://nikhilrawat.in/skills"
+            />
   </Helmet>
 );
-
 export default Skills;
