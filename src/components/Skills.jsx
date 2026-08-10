@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 const skills = [
   "HTML",
@@ -15,6 +16,7 @@ const skills = [
 
 const Skills = () => {
   return (
+    <Helmet>
     <section
       id="skills"
       className="relative py-20 bg-[#0d0d0d] overflow-hidden text-white"
@@ -78,6 +80,11 @@ const SkillBadge = ({ skill }) => (
   >
     {skill}
   </div>
+  <link
+            rel="canonical"
+            href="https://nikhilrawat.in/skills"
+          />
+  </Helmet>
 );
 
 export default Skills;

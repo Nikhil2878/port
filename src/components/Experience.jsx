@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet-async";
+
 const Experience = () => {
   //Comment commented
   const experiences = [
@@ -28,6 +30,7 @@ const Experience = () => {
   ];
 
   return (
+    <Helmet>
     <section
       id="experience"
       className="py-20 px-6 max-w-6xl mx-auto text-white"
@@ -63,7 +66,13 @@ const Experience = () => {
           </div>
         ))}
       </div>
+        
     </section>
+    <link
+          rel="canonical"
+          href="https://nikhilrawat.in/experience"
+        />
+      </Helmet>
   );
 };
 

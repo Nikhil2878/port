@@ -95,7 +95,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/nikhi-rawat-47232a350"
+            href="https://in.linkedin.com/in/nikhil-rawat-47232a350"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full border border-gray-700

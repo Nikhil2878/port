@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
+    <Helmet>
     <section
       className="py-20 px-6 max-w-6xl mx-auto text-gray-300"
       id="about"
@@ -85,6 +87,11 @@ const About = () => {
         </motion.div>
       </div>
     </section>
+      <link
+          rel="canonical"
+          href="https://nikhilrawat.in/about"
+        />
+    </Helmet>
   );
 };
 

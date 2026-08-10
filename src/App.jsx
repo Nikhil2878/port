@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -27,6 +28,7 @@ function App() {
   }
 
   return (
+    <HelmetProvider>
     <BrowserRouter>
       <div className="bg-[#0a0a0a] min-h-screen text-gray-100 font-poppins">
         <Navbar />
@@ -44,6 +46,7 @@ function App() {
         <Footer />
       </div>
     </BrowserRouter>
+    </HelmetProvider>
   );
 }
 

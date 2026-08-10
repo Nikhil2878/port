@@ -2,9 +2,41 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import HeroImage from "../assets/photo.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
+   const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nikhil Rawat",
+    "url": "https://nikhilrawat.in/",
+    "jobTitle": "Full Stack Developer",
+    "description":
+      "Nikhil Rawat is a Full Stack Developer specializing in React, Next.js, Node.js, Express, MongoDB and MySQL.",
+    "knowsAbout": [
+      "React",
+      "Next.js",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "MySQL",
+      "Tailwind CSS",
+      "Web Development"
+    ],
+    "sameAs": [
+    "https://github.com/Nikhil2878",
+    "https://in.linkedin.com/in/nikhil-rawat-47232a350"
+  ]
+  };
   return (
+    <Helmet>
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(personSchema),
+  }}
+/>
     <section className="relative min-h-screen bg-[#0a0a0a] text-white overflow-hidden flex items-center">
       
       {/* Dotted Background */}
@@ -25,18 +57,19 @@ const Home = () => {
           transition={{ duration: 0.8 }}
           className="text-center md:text-left"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
-            Build. Innovate.
-            <br />
-            <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
-              Transform Ideas into Reality
-            </span>
-          </h1>
+         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
+  Hi, I'm Nikhil Rawat.
+  <br />
 
-          <p className="mt-6 text-gray-400 text-base sm:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
-            I craft modern, responsive, and high-performance digital experiences.
-            Let’s collaborate to turn your ideas into impactful products.
-          </p>
+  <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+    Full Stack Developer
+  </span>
+</h1>
+
+         <p className="mt-6 text-gray-400 text-base sm:text-lg leading-relaxed max-w-xl">
+  I build modern, responsive and scalable web applications using
+  React, Next.js, Node.js, Express, MongoDB and MySQL.
+</p>
 
           {/* CTA */}
           <motion.div
@@ -64,12 +97,14 @@ const Home = () => {
           transition={{ duration: 1 }}
           className="relative flex justify-center"
         >
+
           <img
-            src={HeroImage}
-            alt="Developer Illustration"
-            className="w-[260px] sm:w-[320px] md:w-[420px] 
+  src={HeroImage}
+  alt="Nikhil Rawat - Full Stack Developer"
+  loading="eager"
+  className="w-[260px] sm:w-[320px] md:w-[420px] 
               drop-shadow-[0_0_50px_rgba(139,92,246,0.45)]"
-          />
+/>
 
           {/* Bottom Fade */}
           {/* <div className="absolute bottom-0 left-0 w-full h-32 
@@ -78,7 +113,14 @@ const Home = () => {
 
       </div>
     </section>
+      <link
+          rel="canonical"
+          href="https://nikhilrawat.in/hero"
+        />
+    </Helmet>
+    
   );
+  
 };
 
 export default Home;
