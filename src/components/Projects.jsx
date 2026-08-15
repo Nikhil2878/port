@@ -42,7 +42,7 @@ import { ExternalLink} from "lucide-react";
 
 const Projects = () => {
   return (
-    <Helmet>
+
     <section
       id="projects"
       className="py-20 px-6 max-w-6xl mx-auto text-white"
@@ -112,11 +112,7 @@ const Projects = () => {
         ))}
       </div>
     </section>
-    <link
-              rel="canonical"
-              href="https://nikhilrawat.in/projects"
-            />
-    </Helmet>
+   
   );
 };
 

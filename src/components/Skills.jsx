@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+
 
 const skills = [
   "HTML",
@@ -16,7 +16,6 @@ const skills = [
 
 const Skills = () => {
   return (
-    <Helmet>
     <section
       id="skills"
       className="relative py-20 bg-[#0d0d0d] overflow-hidden text-white"
@@ -64,16 +63,12 @@ const Skills = () => {
         </motion.div>
       </div>
     </section>
-      <link
-              rel="canonical"
-              href="https://nikhilrawat.in/skills"
-            />
-    </Helmet>
+      
   );
 };
 
 const SkillBadge = ({ skill }) => (
-  <Helmet>
+
   <div
     className="px-4 py-2 sm:px-6 sm:py-3
     text-sm sm:text-base md:text-lg
@@ -86,10 +81,6 @@ const SkillBadge = ({ skill }) => (
   >
     {skill}
   </div>
-    <link
-              rel="canonical"
-              href="https://nikhilrawat.in/skills"
-            />
-  </Helmet>
+   
 );
 export default Skills;

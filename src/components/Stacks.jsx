@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+
 
 const stacks = [
   {
@@ -30,7 +30,7 @@ const stacks = [
 
 const Stacks = () => {
   return (
-    <Helmet>
+
     <section
       id="stacks"
       className="py-20 px-6 max-w-6xl mx-auto text-white"
@@ -69,11 +69,8 @@ const Stacks = () => {
         ))}
       </div>
     </section>
-    <link
-              rel="canonical"
-              href="https://nikhilrawat.in/stacks"
-            />
-    </Helmet>
+  
+
   );
 };
 
